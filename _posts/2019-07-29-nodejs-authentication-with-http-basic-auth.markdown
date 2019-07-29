@@ -2,7 +2,7 @@
 layout: post
 title:  "NodeJs & Authentication  with Http Basic Access (Part 1)"
 date:   2019-07-29 08:26:14 +0000
-categories: nodejs, authentication, http
+categories: nodejs authentication http
 ---
 
 ## Introduction
