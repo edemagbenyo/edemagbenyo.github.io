@@ -19,7 +19,7 @@ telephone: +233 555 065 430
 description: >- # this means to ignore newlines until "baseurl:"
   Edem Agbenyo Official Website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "//edemagbenyo.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: edemagbenyo
 github_username:  edemagbenyo
 
