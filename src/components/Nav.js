@@ -3,8 +3,8 @@ const Nav = () => {
   return (
     <div className="navbar-container">
       <ul>
-        <li><a href={"/"}>Projects</a></li>
-        <li><a href={"/"}>Blog</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
         <li className="hire-me"><a href="#contact">Hire me</a></li>
       </ul>
     </div>

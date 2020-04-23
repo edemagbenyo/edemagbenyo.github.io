@@ -6,7 +6,7 @@ import Live from "../assets/live.png";
 
 const Links = ({links}) => {
   return (
-    <div className="links">
+    <div className="links" id="projects">
       <a href={links.live} title="View live">
         <img src={Live} alt="live" />
       </a>

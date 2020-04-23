@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.scss";
 import LinkedIn from "../assets/linkedin.png";
 import Gh from "../assets/gh.png";
+import Twitter from "../assets/twitter.png";
 
 const Contact = () => {
   return (
@@ -35,8 +36,11 @@ const Contact = () => {
               <img src={LinkedIn} alt="LinkedIn Logo" />
             </a>
           </li>
+          <li>
+            <a href="https://www.twitter.com/edemagbenyo/"><img src={Twitter} alt="Twitter Logo"/></a>
+          </li>
         </ul>
-  <p>Made with love by Edem. {(new Date).getFullYear()}</p>
+  <p>Made with love by Edem. &copy; {(new Date).getFullYear()}</p>
       </div>
     </div>
   );

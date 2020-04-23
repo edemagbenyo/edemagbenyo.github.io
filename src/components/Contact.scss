@@ -55,6 +55,7 @@
           font-size: 1.5em;
           margin: 10px 0;
           color: #FFFFFF;
+          border: none;
         }
 
       }
@@ -64,6 +65,7 @@
     grid-area: links;
     p{
       color: $primary-text;
+      font-size: .8em;
     }
   }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import LinkedIn from '../assets/linkedin.png';
 import Gh from '../assets/gh.png';
+import Twitter from '../assets/twitter.png';
 const Welcome = () => {
   return (
     <div className="welcome-container">
@@ -16,6 +17,9 @@ const Welcome = () => {
           </li>
           <li>
             <a href="https://www.linkedin.com/in/edemagbenyo/"><img src={LinkedIn} alt="LinkedIn Logo"/></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/edemagbenyo/"><img src={Twitter} alt="Twitter Logo"/></a>
           </li>
           
         </ul>
