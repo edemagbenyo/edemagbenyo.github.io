@@ -3,12 +3,14 @@
 .projects-container{
   background-color: $light;
   display: grid;
-  grid-template-columns: 10% 1fr 10% 1fr 10%;
+  grid-template-columns: 15% 1fr 10% 1fr 15%;
   grid-template-areas: ". left . right .";
   padding: 50px 0;
   .left{
-    padding: 50px 0;
+    padding: 30px 0;
     grid-area: left;
+    display: flex;
+    flex-direction: column;
     .projects-intro{
       text-align: left;
       span{
@@ -22,14 +24,21 @@
         padding-left: 0;
       }
     }
+    .project{
+      margin-top: 50px;
+    }
   }
   .right{
     grid-area: right;
-    // margin: ;
-    display: grid;
-    row-gap: 80px;
+    display: flex;
+    flex-direction: column;
+    .project:not(:first-child){
+      margin-top: 50px;
+    }
   }
   .project{
+    // border-radius: 80px;
+    position: relative;
     overflow: hidden;
     height:400px;
     background-color: $dark;
@@ -62,5 +71,22 @@
         margin-left: -40px;
       }
     }
+    .links{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(49,53,70,.5);
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      display: none;
+    }
+    &:hover .links{
+      display: flex;
+    }
   }
+  
 }
