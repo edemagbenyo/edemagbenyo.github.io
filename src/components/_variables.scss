@@ -1,0 +1,12 @@
+$yellow: #ffc25c;
+$light: #323646;
+$dark: #242634;
+$light-text: #999aa2;
+$primary-text: #e9e9eb;
+
+@mixin title {
+  margin: 20px 0;
+  color: $primary-text;
+  font-size: 1.99em;
+  font-weight: 600;
+}

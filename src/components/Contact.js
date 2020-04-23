@@ -1,4 +1,5 @@
 import React from 'react';
-export default ()=>{
+const Contact = ()=>{
   return <div>sdfsadf</div>
 }
+export default Contact;

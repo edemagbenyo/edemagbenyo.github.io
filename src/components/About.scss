@@ -1,0 +1,86 @@
+@import './variables';
+
+.about-container{
+  padding: 50px 0;
+  background-color: #242634;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-contact{
+  display: grid;
+  grid-template-columns: 35% 75%;
+  grid-template-rows: auto;
+  grid-template-areas: "query info";
+  width: 80%;
+  .about-query{
+    grid-area: query;
+    text-align: left;
+    span{
+      color:$light-text;
+    }
+    h2{
+      @include title;
+    }
+    p{
+      font-size: .8em;
+      margin: 50px 0 70px 0;
+      color: $primary-text;
+    }
+    a{
+      color: $yellow;
+      padding:5px;
+      font-weight: 900;
+      border-radius: 5px;
+      font-size: 1.0em;
+    }
+  }
+  .about-info{
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    .about-skills{
+      background-color: $light;
+      h2{
+        @include title;
+      }
+      p{
+        color: $light-text;
+        font-size: 1.1em;
+        margin: 40px 0;
+        word-spacing: .2em;
+        font-weight: 400;
+        padding: 10px 10px;
+      }
+      button{
+        display: block;
+        border:none;
+        padding:10px;
+        color: $primary-text;
+        background-color: $yellow;
+        font-size: 1.2em;
+        margin: 10px;
+        text-decoration: underline;
+      }
+      &:hover{
+        background-color: $yellow;
+        color: white;
+        button{
+          background-color: #242634;
+        }
+        p{
+          color:#FFFFFF
+        }
+      }
+    }
+  }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
