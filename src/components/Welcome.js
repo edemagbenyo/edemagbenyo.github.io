@@ -23,7 +23,7 @@ const Welcome = () => {
       <div className="welcome-right">
         <div className="welcome-message">
           <span>Introduction</span>
-          <h3>Full-stack web and mobile engineer.</h3>
+          <h3>Full-stack web and mobile applications engineer.</h3>
           <p>I possess over 5years of experience working with web technologies. I take delight in crafting clean and robust applications. </p>
         </div>
       </div>

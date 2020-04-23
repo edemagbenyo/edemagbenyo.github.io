@@ -9,15 +9,14 @@
 }
 .about-contact{
   display: grid;
-  grid-template-columns: 35% 75%;
+  grid-template-columns: 10% 20% 60% 10%;
   grid-template-rows: auto;
-  grid-template-areas: "query info";
-  width: 80%;
+  grid-template-areas: ". query info .";
   .about-query{
     grid-area: query;
     text-align: left;
     span{
-      color:$light-text;
+      @include span
     }
     h2{
       @include title;
@@ -46,12 +45,7 @@
         @include title;
       }
       p{
-        color: $light-text;
-        font-size: 1.1em;
-        margin: 40px 0;
-        word-spacing: .2em;
-        font-weight: 400;
-        padding: 10px 10px;
+        @include paragraph
       }
       button{
         display: block;

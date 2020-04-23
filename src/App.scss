@@ -1,8 +1,5 @@
-/* Colors
-Yellow: #FFC25C
-Light: #323646
-Dark: #242634
- */
+@import './components/variables';
+
 * {
   padding: 0;
   margin: 0;
@@ -146,9 +143,7 @@ Dark: #242634
   text-align: left;
 }
 .welcome-message p, .welcome-message span{
-  margin: 10px 0;
-  color: #999AA2;
-  font-weight: 500;
+ @include span
 }
 .welcome-message h3{
   font-size: 1.7em;

@@ -1,0 +1,66 @@
+@import './variables';
+
+.projects-container{
+  background-color: $light;
+  display: grid;
+  grid-template-columns: 10% 1fr 10% 1fr 10%;
+  grid-template-areas: ". left . right .";
+  padding: 50px 0;
+  .left{
+    padding: 50px 0;
+    grid-area: left;
+    .projects-intro{
+      text-align: left;
+      span{
+        @include span
+      }
+      h2{
+        @include title;
+      }
+      p{
+        @include paragraph;
+        padding-left: 0;
+      }
+    }
+  }
+  .right{
+    grid-area: right;
+    // margin: ;
+    display: grid;
+    row-gap: 80px;
+  }
+  .project{
+    overflow: hidden;
+    height:400px;
+    background-color: $dark;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 30% 60%;
+    grid-template-areas: 
+    ". . . ."
+    ". title skills ."
+    "screenshot screenshot screenshot screenshot";
+    .title{
+      grid-area: title;
+      h2{
+        @include title;
+        font-size: 1.4em;
+        margin: 0;
+      }
+    }
+    .skills{
+      grid-area: skills;
+      color:$primary-text;
+      font-size: .8em;
+    }
+    .screenshot{
+      grid-area: screenshot;
+      // margin-top: 20px;
+      img{
+        width: 160%;
+        transform: rotate(-20deg);
+        margin-left: -40px;
+      }
+    }
+  }
+}

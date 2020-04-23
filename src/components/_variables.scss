@@ -1,7 +1,7 @@
 $yellow: #ffc25c;
 $light: #323646;
 $dark: #242634;
-$light-text: #999aa2;
+$secondary-text: #999aa2;
 $primary-text: #e9e9eb;
 
 @mixin title {
@@ -9,4 +9,17 @@ $primary-text: #e9e9eb;
   color: $primary-text;
   font-size: 1.99em;
   font-weight: 600;
+}
+@mixin paragraph {
+  color: $secondary-text;
+  font-size: 1.1em;
+  margin: 40px 0;
+  word-spacing: 0.2em;
+  font-weight: 400;
+  padding: 10px 10px;
+}
+@mixin span {
+  margin: 10px 0;
+  color: $secondary-text;
+  font-weight: 500;
 }
