@@ -6,7 +6,7 @@ import Live from "../assets/live.png";
 
 const Links = ({links}) => {
   return (
-    <div className="links" id="projects">
+    <div className="links">
       <a href={links.live} title="View live">
         <img src={Live} alt="live" />
       </a>
@@ -40,7 +40,7 @@ const Project = ({name,skills,links}) => {
 };
 function Projects() {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <div className="left">
         <div className="projects-intro">
           <span>Portfolio</span>
