@@ -45,14 +45,12 @@ function Projects() {
         <div className="projects-intro">
           <span>Portfolio</span>
           <h2>Some of my projects</h2>
-          <p>Here are some of my notable projects.</p>
+          <p></p>
         </div>
         <Project name="Covid-19 Tracker" skills={["Vanilla JS", "ReactJS"]}/>
-        <Project name="Covid-19 Tracker" skills={["Vanilla JS", "ReactJS"]} />
       </div>
       <div className="right">
         <Project name="Friender(Facebook like )" skills={["Ruby(Rails)"]} />
-        <Project name="iSell(Point of Sales)" skills={["PHP(Laravel)","VueJS"]} />
         <Project name="iSell(Point of Sales)" skills={["PHP(Laravel)","VueJS"]} />
       </div>
     </div>

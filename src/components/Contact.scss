@@ -1,0 +1,70 @@
+@import './variables';
+
+.contact-container{
+  background-color: $light;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". cf ."
+  ". links .";
+  .contact-form{
+    grid-area: cf;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "intro form";
+    .intro{
+      grid-area: intro;
+      text-align: left;
+      h2{
+        @include title
+      }
+      a{
+        color: $yellow;
+        font-size: 1.2em;
+        font-weight: 900;
+      }
+    }
+    .form{
+      grid-area: form;
+      text-align: left;
+      h2{
+        @include title
+      }
+      form{
+        & *{
+          display: block;
+          width: 100%;
+          background: transparent;
+          border:none;
+          border-bottom: .1em solid $secondary-text;
+          padding-top:10px;
+          padding-bottom:30px;
+          color: $primary-text;
+          font-size: 1em;
+          &::placeholder{
+            color: $primary-text;
+            font-weight: 500;
+          }
+          &:focus{
+            outline: none;
+          }
+        }
+        input[type="submit"]{
+          background-color: $yellow;
+          padding: 5px;
+          font-size: 1.5em;
+          margin: 10px 0;
+          color: #FFFFFF;
+        }
+
+      }
+    }
+  }
+  .links{
+    grid-area: links;
+    p{
+      color: $primary-text;
+    }
+  }
+
+}
