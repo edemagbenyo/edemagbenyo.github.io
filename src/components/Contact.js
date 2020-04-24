@@ -44,7 +44,7 @@ const Contact = () => {
             </a>
           </li>
         </ul>
-        <p>Made with love by Edem. Design inspired by <a style={{color:'#FFFFFF'}} href="https://dribbble.com/shots/10724776-Carlos-Personal-Portfolio-Website">Carlos</a>. &copy; {new Date().getFullYear()} </p>
+        <p>Made with love by Edem. &copy; {new Date().getFullYear()} </p>
       </div>
     </div>
   );
