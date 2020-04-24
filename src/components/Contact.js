@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import "../styles/Contact.scss";
 import LinkedIn from "../assets/linkedin.png";
 import Gh from "../assets/gh.png";

@@ -22,11 +22,14 @@ Links.defaultProps={
     github:"https://github.com/edemagbenyo"
   }
 }
-const Project = ({name,skills,links}) => {
+const Project = ({name,skills,links,desc}) => {
   return (
     <div className="project">
       <div className="title">
         <h2>{name}</h2>
+      </div>
+      <div className="desc">
+        {desc}
       </div>
       <div className="skills">
         <span>{skills.join(",")}</span>
@@ -47,11 +50,11 @@ function Projects() {
           <h2>Some of my projects</h2>
 
         </div>
-        <Project name="Covid-19 Tracker" skills={["Vanilla JS", "ReactJS"]}/>
+        <Project name="Covid-19 Tracker" desc="This is a simple dashboard that displays realtime information on people affected by the novel coronavirus. The application gets the necessary data from the WHO website." skills={["Web","HTML","JS", "ReactJS"]}/>
       </div>
       <div className="right">
-        <Project name="Friender(Facebook like )" skills={["Ruby(Rails)"]} />
-        <Project name="iSell(Point of Sales)" skills={["PHP(Laravel)","VueJS"]} />
+        <Project name="Friender" desc="A facebook like platform to make friends and stay connected. Users can create new posts, and comment on friends posts." skills={["Web","SASS","Ruby","Rails"]} />
+        <Project name="iSell" desc="A web-based point of sales and inventory management system." skills={["Web","PHP(Laravel)","VueJS"]} />
       </div>
     </div>
   );

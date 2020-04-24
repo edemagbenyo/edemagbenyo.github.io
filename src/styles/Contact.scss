@@ -25,6 +25,11 @@
         display: block;
 
       }
+      p{
+        padding: 5px 0;
+        color:$yellow;
+        text-decoration: underline;
+      }
       img{
         width:50%
       }
@@ -70,7 +75,7 @@
         }
       }
       .alert{
-        color:$yellow
+        color:$yellow;
       }
     }
   }
