@@ -2,6 +2,8 @@ import React from "react";
 import LinkedIn from '../assets/linkedin.png';
 import Gh from '../assets/gh.png';
 import Twitter from '../assets/twitter.png';
+
+
 const Welcome = () => {
   return (
     <div className="welcome-container">
@@ -27,7 +29,7 @@ const Welcome = () => {
       <div className="welcome-right">
         <div className="welcome-message">
           <span>Introduction</span>
-          <h3>Full-stack web and mobile applications engineer.</h3>
+          <h3>I am a Full-stack web and mobile applications engineer.</h3>
           <p>I possess over 5years of experience working with web technologies. I take delight in crafting clean and robust applications. </p>
         </div>
       </div>

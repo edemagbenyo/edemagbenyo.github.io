@@ -2,10 +2,9 @@
 
 .blog-container{
   background-color: $dark;
-  padding: 50px 0;
-  display: grid;
-  grid-template-columns: 10% 30% 10% 1fr 10%;
-  grid-template-areas: ". left . right .";
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
   .left{
     grid-area: left;
     text-align: left;

@@ -1,70 +1,70 @@
-@import './variables';
+@import "./variables";
 
-.about-container{
+.about-container {
   padding: 50px 0;
   background-color: #242634;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-contact{
+.about-contact {
   display: grid;
   grid-template-columns: 10% 20% 60% 10%;
   grid-template-rows: auto;
   grid-template-areas: ". query info .";
-  .about-query{
+  .about-query {
     grid-area: query;
     text-align: left;
-    span{
-      @include span
+    span {
+      @include span;
     }
-    h2{
+    h2 {
       @include title;
     }
-    p{
-      font-size: .8em;
+    p {
+      font-size: 0.8em;
       margin: 50px 0 70px 0;
       color: $primary-text;
     }
-    a{
+    a {
       color: $yellow;
-      padding:5px;
+      padding: 5px;
       font-weight: 900;
       border-radius: 5px;
-      font-size: 1.0em;
+      font-size: 1em;
     }
   }
-  .about-info{
+  .about-info {
     grid-area: info;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
-    .about-skills{
+    .about-skills {
       background-color: $light;
-      h2{
+      h2 {
         @include title;
       }
-      p{
-        @include paragraph
+      p {
+        @include paragraph;
       }
-      button{
+      button {
         display: block;
-        border:none;
-        padding:10px;
+        border: none;
+        padding: 10px;
         color: $primary-text;
         background-color: $yellow;
         font-size: 1.2em;
         margin: 10px;
         text-decoration: underline;
       }
-      &:hover{
+      &:hover {
         background-color: $yellow;
         color: white;
-        button{
+        button {
           background-color: #242634;
         }
-        p{
-          color:#FFFFFF
+        p {
+          color: #ffffff;
         }
       }
     }
@@ -72,9 +72,67 @@
 }
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about-container {
+    padding: 20px 20px;
+    .about-contact {
+      display: flex;
+      flex-direction: column;
+      .about-query {
+        padding: 20px;
+        span {
+          @include span;
+        }
+        h2 {
+          @include title;
+        }
+        p {
+          font-size: 0.8em;
+          margin: 20px 0 20px 0;
+          color: $primary-text;
+        }
+        a {
+          color: $yellow;
+          padding: 5px;
+          font-weight: 900;
+          border-radius: 5px;
+          font-size: 1em;
+        }
+      }
+      .about-info {
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        .about-skills {
+          margin-bottom: 20px;
+          h2 {
+            margin: 5px 0;
+          }
+          p {
+            margin: 1em 0;
+          }
+          button {
+            display: inline;
+            border: none;
+            padding: 10px;
+            color: $primary-text;
+            background-color: $yellow;
+            font-size: 1em;
+            margin: 10px;
+            text-decoration: underline;
+          }
+          &:hover {
+            background-color: $yellow;
+            color: white;
+            button {
+              background-color: #242634;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
 }

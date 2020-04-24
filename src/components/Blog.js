@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Blog.scss";
 import Right from "../assets/right.png";
-import ArticleSvg from '../assets/article.svg';
 function Article({ title, link, date }) {
   return (
     <div className="article" id="blog">
