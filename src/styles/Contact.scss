@@ -22,6 +22,8 @@
         color: $yellow;
         font-size: 1.2em;
         font-weight: 900;
+        display: block;
+
       }
       img{
         width:50%
@@ -34,6 +36,9 @@
         @include title
       }
       form{
+        span{
+          display: none;
+        }
         & *{
           display: block;
           width: 100%;
@@ -63,6 +68,9 @@
         textarea{
           font-size: 1em;
         }
+      }
+      .alert{
+        color:$yellow
       }
     }
   }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MenuPng from "../assets/menu.png";
 const Nav = () => {
   const close = ()=>{
