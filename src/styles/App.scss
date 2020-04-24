@@ -87,10 +87,15 @@
 .welcome-right {
   width: 35%;
 }
-.welcome-name h1 {
-  text-align: left;
-  font-size: 6em;
-  padding: 5px;
+.welcome-name {
+  h1 {
+    text-align: left;
+    font-size: 6em;
+    padding: 5px;
+  }
+  h4{
+    text-align: left;
+  }
 }
 .welcome-name span {
   width: 50px;

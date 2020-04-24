@@ -2,15 +2,13 @@
 
 .blog-container{
   background-color: $dark;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 10% 30% 10% 1fr 10%;
+  grid-template-areas: ". left . right .";
   .left{
     grid-area: left;
     text-align: left;
-    img{
-      width: 50%;
-    }
     h2{
       @include title
     }
@@ -45,6 +43,57 @@
       img{
         text-decoration: underline;
         width: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-device-width:320px) and (max-device-width:480px){
+  .blog-container{
+    background-color: $dark;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    .left{
+      grid-area: left;
+      text-align: left;
+      img{
+        width: 50%;
+      }
+      h2{
+        @include title;
+        font-size:1.4em;
+      }
+      span{
+        @include span
+      }
+    }
+    .right{
+      grid-area: right;
+      .article{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-areas: "date title link";
+        border-bottom: .5px solid $secondary-text;
+        padding:20px 0;
+      }
+      .date{
+        @include span;
+        grid-area: date;
+        font-size: .6em;
+      }
+      .title{
+        grid-area: title;
+        a{
+          font-size: 1em;
+        }
+      }
+      .link{
+        grid-area: link;
+        img{
+          text-decoration: underline;
+          width: 20px;
+        }
       }
     }
   }

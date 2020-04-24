@@ -9,6 +9,7 @@ const Welcome = () => {
     <div className="welcome-container">
       <div className="welcome-left">
         <div className="welcome-name">
+          <h4>Hello, My name is</h4>
           <h1>Edem</h1>
           <h1>Agbenyo</h1>
           <span> </span>
