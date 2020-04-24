@@ -9,6 +9,9 @@
   .left{
     grid-area: left;
     text-align: left;
+    img{
+      width: 50%;
+    }
     h2{
       @include title
     }

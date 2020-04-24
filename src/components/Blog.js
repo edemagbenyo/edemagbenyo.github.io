@@ -1,7 +1,7 @@
 import React from "react";
-import "./Blog.scss";
+import "../styles/Blog.scss";
 import Right from "../assets/right.png";
-
+import ArticleSvg from '../assets/article.svg';
 function Article({ title, link, date }) {
   return (
     <div className="article" id="blog">
@@ -26,7 +26,6 @@ const Blog = () => {
       <div className="left">
         <span>Blog</span>
         <h2>What's new?</h2>
-        <h2>My blog and new</h2>
       </div>
       <div className="right">
         <Article title="We created a Covid-19 Tracking dashboard" link="https://hackernoon.com/we-created-a-covid19-tracking-dashboard-4d3n3ylw" date="April 16th 2020" />

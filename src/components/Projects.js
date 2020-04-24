@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.scss";
+import "../styles/Projects.scss";
 import Covid from "../assets/covid.png";
 import Gh from "../assets/gh.png";
 import Live from "../assets/live.png";
@@ -32,7 +32,7 @@ const Project = ({name,skills,links}) => {
         <span>{skills.join(",")}</span>
       </div>
       <div className="screenshot">
-        <img src={Covid} alt="Covid 19 Screenshot" />
+        <img src={Covid} alt="Screenshot" />
       </div>
       <Links links={links} />
     </div>
@@ -45,7 +45,7 @@ function Projects() {
         <div className="projects-intro">
           <span>Portfolio</span>
           <h2>Some of my projects</h2>
-          <p></p>
+
         </div>
         <Project name="Covid-19 Tracker" skills={["Vanilla JS", "ReactJS"]}/>
       </div>

@@ -1,14 +1,16 @@
 import React from "react";
-import "./Contact.scss";
+import "../styles/Contact.scss";
 import LinkedIn from "../assets/linkedin.png";
 import Gh from "../assets/gh.png";
 import Twitter from "../assets/twitter.png";
+import ContactSvg from "../assets/contact.svg";
 
 const Contact = () => {
   return (
     <div className="contact-container" id="contact">
       <div className="contact-form">
         <div className="intro">
+          <img src={ContactSvg} alt="contact" />
           <h2>Got a project?</h2>
           <h2>Let's talk.</h2>
           <span></span>
@@ -37,10 +39,12 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com/edemagbenyo/"><img src={Twitter} alt="Twitter Logo"/></a>
+            <a href="https://www.twitter.com/edemagbenyo/">
+              <img src={Twitter} alt="Twitter Logo" />
+            </a>
           </li>
         </ul>
-  <p>Made with love by Edem. &copy; {(new Date).getFullYear()}</p>
+        <p>Made with love by Edem. Design inspired by <a style={{color:'#FFFFFF'}} href="https://dribbble.com/shots/10724776-Carlos-Personal-Portfolio-Website">Carlos</a>. &copy; {new Date().getFullYear()} </p>
       </div>
     </div>
   );

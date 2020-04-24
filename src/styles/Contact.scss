@@ -15,6 +15,9 @@
     .intro{
       grid-area: intro;
       text-align: left;
+      img{
+        width: 80%;
+      }
       h2{
         @include title
       }
