@@ -7,7 +7,7 @@ const About = () => {
         <div className="about-query">
           <span>About my skills</span>
           <h2>
-            I take much delight in writing clean, responsive and reusable applications.
+            I take much delight in writing clean code, and scalable applications.
           </h2>
           <p>I am currently looking for new opportunities</p>
           <a href="/">Download Resume</a>
@@ -33,9 +33,9 @@ const About = () => {
           <div className="about-skills">
             <h2>Dev-Ops</h2>
             <p>
-              I have good knowledge of the following technologiesto manage application deployment and delivery.
+              I love workflow automation and application continuous delivery using the following technologies.
             </p>
-            <button>CI/CD</button>
+            <button>Github Actions</button>
             <button>Docker</button>
             <button>AWS/Firebase</button>
           </div>

@@ -31,7 +31,7 @@ const Welcome = () => {
         <div className="welcome-message">
           <span>Introduction</span>
           <h3>I am a Full-stack web and mobile applications engineer.</h3>
-          <p>I possess over 5years of experience working with web technologies. I take delight in crafting clean and robust applications. </p>
+          <p>I have over 5years of experience working with web technologies. I enjoy building with JavaScript, PHP and Ruby. </p>
         </div>
       </div>
     </div>

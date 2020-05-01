@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/Projects.scss";
 import Covid from "../assets/covid.png";
+import Confinini from "../assets/confinini.png";
+import Weather from "../assets/weather.png";
 import Gh from "../assets/gh.png";
 import Live from "../assets/live.png";
 
@@ -22,7 +24,7 @@ Links.defaultProps={
     github:"https://github.com/edemagbenyo"
   }
 }
-const Project = ({name,skills,links,desc}) => {
+const Project = ({name,skills,links,desc,image}) => {
   return (
     <div className="project">
       <div className="title">
@@ -35,12 +37,15 @@ const Project = ({name,skills,links,desc}) => {
         <span>{skills.join(",")}</span>
       </div>
       <div className="screenshot">
-        <img src={Covid} alt="Screenshot" />
+        <img src={image} alt="Screenshot" />
       </div>
       <Links links={links} />
     </div>
   );
 };
+Project.defaultProps={
+  image:Covid
+}
 function Projects() {
   return (
     <div className="projects-container" id="projects">
@@ -53,8 +58,8 @@ function Projects() {
         <Project name="Covid-19 Tracker" desc="This is a simple dashboard that displays realtime information on people affected by the novel coronavirus. The application gets the necessary data from the WHO website." skills={["Web","HTML","JS", "ReactJS"]}/>
       </div>
       <div className="right">
-        <Project name="Friender" desc="A facebook like platform to make friends and stay connected. Users can create new posts, and comment on friends posts." skills={["Web","SASS","Ruby","Rails"]} />
-        <Project name="iSell" desc="A web-based point of sales and inventory management system." skills={["Web","PHP(Laravel)","VueJS"]} />
+        <Project name="Confinini" image={Confinini} desc="A social platform to make friends and stay connected during the coronavirus lockdown. Users can create new posts, and comment on friends posts." skills={["Web","SASS","Ruby","Rails"]} />
+        <Project name="Weather App" image={Weather} desc="Get weather information of any place in realtime" skills={["Javascript"]} />
       </div>
     </div>
   );
