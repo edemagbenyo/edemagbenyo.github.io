@@ -55,7 +55,7 @@ function Projects() {
           <h2>Some of my projects</h2>
 
         </div>
-        <Project name="Covid-19 Tracker" desc="This is a simple dashboard that displays realtime information on people affected by the novel coronavirus. The application gets the necessary data from the WHO website." skills={["Web","HTML","JS", "ReactJS"]}/>
+        <Project name="Covid-19 Tracker" desc="This is a simple dashboard that displays realtime information on people affected by the novel coronavirus. The application gets the necessary data from the WHO website." skills={["Web","HTML","JS", "React"]}/>
       </div>
       <div className="right">
         <Project name="Confinini" image={Confinini} desc="A social platform to make friends and stay connected during the coronavirus lockdown. Users can create new posts, and comment on friends posts." skills={["Web","SASS","Ruby","Rails"]} />

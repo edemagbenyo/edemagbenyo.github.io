@@ -130,4 +130,19 @@
   .App {
     width: 100%;
   }
+  .welcome-message p {
+    font-size: 1rem;
+  }
+  .welcome-message h3 {
+    word-spacing: 0.1em;
+    font-size: 1.1rem;
+  }
+  /* Welcome */
+.welcome-container {
+  display: flex;
+  color: white;
+  width: 80%;
+  margin-top: 20px;
+  justify-content: space-between;
+}
 }

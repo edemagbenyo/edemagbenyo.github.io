@@ -9,14 +9,14 @@ const About = () => {
           <h2>
             I take much delight in writing clean code, and scalable applications.
           </h2>
-          <p>I am currently looking for new opportunities</p>
+          <p>I am currently looking for new opportunities.</p>
           <a href="/">Download Resume</a>
         </div>
         <div className="about-info">
           <div className="about-skills">
             <h2>Backend</h2>
             <p>
-              I have worked on building a number of applications using the following technologies
+              I have built several applications using the following technologies.
             </p>
             <button>PHP(Laravel)</button>
             <button>Ruby(Rails)</button>
@@ -25,7 +25,7 @@ const About = () => {
           <div className="about-skills">
             <h2>Front-end</h2>
             <p>
-              I can craft beatutiful, responsive and fast application using the following frameworks.
+              I can craft beautiful, responsive and fast applications using the following frameworks.
             </p>
             <button>React(JS|Native)</button>
             <button>Vue.Js</button>

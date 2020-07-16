@@ -89,7 +89,7 @@
 
 }
 
-@media only screen and(min-device-width:320px)and (max-device-width:480px){
+@media only screen and (max-device-width:480px){
   .contact-container{
     background-color: $light;
     padding: 30px 20px;
@@ -106,7 +106,9 @@
           width: 80%;
         }
         h2{
-          @include title
+          @include title;
+          font-size:1rem;
+          font-weight: bold;
         }
         a{
           color: $yellow;
@@ -118,7 +120,8 @@
         grid-area: form;
         text-align: left;
         h2{
-          @include title
+          @include title;
+          font-size:1.2rem;
         }
         form{
           input[type="submit"]{

@@ -48,7 +48,7 @@
   }
 }
 
-@media only screen and(min-device-width:320px) and (max-device-width:480px){
+@media only screen and (max-device-width:480px){
   .blog-container{
     background-color: $dark;
     padding: 30px 20px;
@@ -85,7 +85,7 @@
       .title{
         grid-area: title;
         a{
-          font-size: 1em;
+          font-size: .8rem;
         }
       }
       .link{
