@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/About.scss";
+import Resume from '../assets/Resume.pdf'
 const About = () => {
   return (
     <div className="about-container">
@@ -10,7 +11,7 @@ const About = () => {
             I take much delight in writing clean code, and scalable applications.
           </h2>
           <p>I am currently looking for new opportunities.</p>
-          <a href="/">Download Resume</a>
+          <a href={Resume}>Download Resume</a>
         </div>
         <div className="about-info">
           <div className="about-skills">
