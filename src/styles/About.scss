@@ -53,10 +53,11 @@
         border: none;
         padding: 10px;
         color: $primary-text;
-        background-color: $yellow;
+        border: 2px $yellow solid;
+        background: none;
         font-size: 1.2em;
         margin: 10px;
-        text-decoration: underline;
+        // text-decoration: underline;
       }
       &:hover {
         background-color: $yellow;
@@ -120,10 +121,10 @@
             border: none;
             padding: 4px 10px;
             color: $primary-text;
-            background-color: $yellow;
+            border: 2px $yellow solid;
+            background: none;
             font-size: 1em;
             margin: 5px;
-            text-decoration: underline;
           }
           &:hover {
             background-color: $yellow;

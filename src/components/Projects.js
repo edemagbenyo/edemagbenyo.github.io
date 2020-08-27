@@ -11,11 +11,11 @@ import Live from "../assets/live.png";
 const Links = ({ links }) => {
   return (
     <div className="links">
-      <a href={links.live} title="View live">
+      <a href={links.live} title="View live" target="_blank">
         <img src={Live} alt="live" />
       </a>
       {links.github &&
-        <a href={links.github} title="View on github">
+        <a href={links.github} title="View on github" target="_blank">
           <img src={Gh} alt="github" />
         </a>
       }
@@ -60,7 +60,7 @@ function Projects() {
 
         </div>
         <Project name="Covid-19 Tracker" desc="This is a simple dashboard that displays realtime information on people affected by the novel coronavirus. The application gets the necessary data from the WHO website." skills={["Web", "HTML", "JS", "React"]} links={{ live: 'https://covid19out-92937.firebaseapp.com/', github: 'https://github.com/edemagbenyo/covid19-screening' }} />
-        <Project name="Doctorize" image={Doctorize} desc="A platform that connect patients to doctors and specialists. Get your medical consultation from the comfort of your home." skills={["Rails, React, Redux, JS, HTML, SASS"]} links={{ live: 'https://edemagbenyo.com/weather-app-vanillajs/', github: 'https://doctorize.herokuapp.com/' }} />
+        <Project name="Doctorize" image={Doctorize} desc="A platform that connect patients to doctors and specialists. Get your medical consultation from the comfort of your home." skills={["Rails, React, Redux, JS, HTML, SASS"]} links={{ live: 'https://doctorize.herokuapp.com/', github: 'https://github.com/edemagbenyo/doctorize-front' }} />
       </div>
       <div className="right">
         <Project name="Confinini" image={Confinini} desc="A social platform to make friends and stay connected during the coronavirus lockdown. Users can create new posts, and comment on friends posts." skills={["Web", "SASS", "Ruby", "Rails, HTML"]} links={{ live: 'https://confinini.herokuapp.com/', github: 'https://github.com/edemagbenyo/confinini' }} />
