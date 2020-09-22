@@ -3,7 +3,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-gray-200 font-sans leading-normal tracking-normal">
       <Home/>
     </div>
   );
