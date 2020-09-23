@@ -43,8 +43,8 @@ export default function NavMenu() {
             <div class="flex w-1/2 justify-end content-center">
               <a
                 class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-                data-tippy-content="@twitter_handle"
-                href="https://twitter.com/intent/tweet?url=#"
+                data-tippy-content="@edemagbenyo"
+                href="https://twitter.com/edemagbenyo"
               >
                 <svg
                   class="fill-current h-4"
